@@ -1,0 +1,103 @@
+//This file will register all removals that aren't sold.
+
+2022-07-17 17:52:17 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: This is my very first removal test.
+2022-07-17 17:52:22 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: This is my very first removal test.
+2022-07-17 17:58:57 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: This is my very first removal test.
+2022-07-17 17:59:13 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: Inventory adjusting
+2022-07-17 17:59:24 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: Inventory adjusting test
+2022-07-17 18:12:41 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: test removing many itens
+Removed: 20
+2022-07-17 18:13:47 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: second test removing 10
+Removed: 10
+--------------------------------------
+2022-07-17 18:24:31 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: Testing
+Removed: 9
+--------------------------------------
+2022-07-17 18:24:50 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: testing removing more than it has,
+Removed: -1
+--------------------------------------
+2022-07-17 18:31:26 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: 2
+Removed: 0
+--------------------------------------
+2022-07-17 18:33:18 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: testing
+Removed: 8
+--------------------------------------
+2022-07-17 19:15:49 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: Testando
+Removed: 8
+--------------------------------------
+2022-07-18 16:26:49 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: perdeu
+Removed: 9
+--------------------------------------
+2022-07-18 23:22:49 |invIdUniform: 3 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: teste remo&ccedil;ao
+Removed: 4
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+2022-07-19 14:12:09 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: first try
+Removed: 5
+--------------------------------------
+2022-07-19 14:12:24 |invIdUniform: 15 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: reason
+Removed: 6
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+ |invIdUniform:  |invItem:  |By:  |Email: 
+Obs: 
+Removed: 
+--------------------------------------
+2022-07-19 14:21:37 |invIdUniform: 15 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: test
+Removed: 5
+--------------------------------------
+2022-07-19 14:21:48 |invIdUniform: 3 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: test
+Removed: 2
+--------------------------------------
+2022-07-19 14:22:26 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: tamanho 6 vai ficar com 3
+Removed: 3
+--------------------------------------
+2022-07-19 14:23:09 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: teste
+Removed: 2
+--------------------------------------
+2022-08-14 11:30:24 |invIdUniform: 16 |invItem: Bermuda Femina |By: Jose Cavalcanti |Email: admin@cse340.net
+Obs: perdas
+Removed: 55
+--------------------------------------

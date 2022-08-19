@@ -1,0 +1,31 @@
+2022-07-17 14:32:58 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 14:33:00 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 14:59:26 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 15:30:01 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 15:30:03 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:11:38 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:25:03 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:25:05 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:27:05 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:33:43 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:33:44 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:53:17 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:53:19 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 18:53:20 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 19:15:17 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-17 19:15:18 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-18 16:25:38 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-18 16:25:39 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-18 16:25:40 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-18 16:27:02 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-18 23:28:17 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-18 23:28:22 |invIdUniform: 2 |invItem: Moleton Unissex |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-19 15:22:06 |invIdUniform: 1 |invItem: Short Saia |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-19 15:24:51 |invIdUniform: 1 |invItem: Short SaiaQtd: 22 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-19 15:25:58 |invIdUniform: 3 |invItem: Short Saia |Qtd: 4 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-07-25 20:19:47 |invIdUniform: 3 |invItem: Short Saia |Qtd: 14 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-08-11 20:35:20 |invIdUniform: 2 |invItem: Moleton Unissex |Qtd: 98 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-08-11 20:35:36 |invIdUniform: 2 |invItem: Moleton Unissex |Qtd: 100 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-08-14 11:29:48 |invIdUniform: 16 |invItem: Bermuda Femina |Qtd: 60 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-08-14 18:47:10 |invIdUniform: 152 |invItem: Camisa Manga Curta |Qtd: 1 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-08-14 19:56:30 |invIdUniform: 124 |invItem: Bermuda Feminina |Qtd: 1 |By: Jose Cavalcanti |Email: admin@cse340.net

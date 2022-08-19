@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    border-bottom: solid 2px #3a3a3a;
+    padding-bottom: 20px;
+    align-content: space-between;
+}
+
+.headerlogo {
+    flex-grow: 3;
+}
+
+.loggedinlink {
+    flex-grow: 1;
+    align-self: flex-end;
+    font-size: 120%;
+}
+
+.myaccountlink {
+    text-decoration: none;
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+    border-top: solid 2px #3a3a3a;
+    padding-bottom: 20px;
+}

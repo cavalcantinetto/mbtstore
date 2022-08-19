@@ -1,0 +1,274 @@
+            section {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+            }
+            
+            header {
+                display: flex;
+                flex-flow: nowrap;
+                flex-direction: row;
+                border-bottom: solid 2px #3a3a3a;
+                padding-bottom: 20px;
+                align-content: space-between;
+                align-items: flex-end;
+                size: 80%;
+            }
+            
+            .headerlogo {
+                flex-grow: 3;
+                size-adjust: 70%;
+            }
+            
+            .loggedinlink {
+                flex-grow: 1;
+                font-size: 100%;
+                width: fit-content;
+                height: fit-content;
+            }
+            
+            .myaccountlink {
+                text-decoration: none;
+                align-self: flex-end;
+                flex-grow: 1;
+            }
+            
+            footer {
+                text-align: center;
+                font-size: 0.5em;
+                border-top: solid 2px #3a3a3a;
+                padding-bottom: 20px;
+            }
+            
+            label {
+                font-family: "Raleway", sans-serif;
+                font-size: 11pt;
+            }
+            
+            #forgot-pass {
+                color: black;
+                font-family: "Raleway", sans-serif;
+                font-size: 10pt;
+                margin-top: 3px;
+                text-align: right;
+            }
+            
+            #card {
+                background: #f19d98;
+                border-radius: 8px;
+                box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+                height: 100%;
+                margin: 0rem auto 8.1rem auto;
+                width: 50%;
+            }
+            
+            #cardul {
+                background: #f19d98;
+                box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+                height: 100%;
+                margin: auto auto auto auto;
+                padding: 5px;
+                list-style-type: none;
+                display: flex;
+                width: 99%;
+                flex-direction: row;
+                align-content: space-between;
+            }
+            
+            section .cardscontainer {
+                justify-content: center;
+            }
+            
+            .cardscontainer {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-content: stretch;
+                padding: 5px;
+            }
+            
+            .cardcategory-div {
+                background: #fdfbfb;
+                box-shadow: 1rem 2rem 8rem rgba(0, 0, 0, 0.65);
+                margin: auto auto auto auto;
+                padding: 5px;
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            a :clicked {
+                text-decoration: none;
+            }
+            
+            a {
+                color: #3a3a3a;
+            }
+            
+            #cardul li {
+                font-size: x-large;
+                margin-left: 15px;
+            }
+            
+            #card-content {
+                padding: 12px 44px;
+                height: 100%;
+            }
+            
+            #card-title {
+                font-family: "Raleway Thin", sans-serif;
+                letter-spacing: 4px;
+                padding-bottom: 23px;
+                padding-top: 13px;
+                text-align: center;
+            }
+            
+            #signup {
+                color: black;
+                font-family: "Raleway", sans-serif;
+                font-size: 10pt;
+                margin-top: 16px;
+                text-align: center;
+            }
+            
+            #submit-btn {
+                background: -webkit-linear-gradient(right, #f77b7b, #bd322d);
+                border: none;
+                border-radius: 21px;
+                box-shadow: 0px 1px 8px #c63c24;
+                cursor: pointer;
+                color: white;
+                font-family: "Raleway SemiBold", sans-serif;
+                height: 42.3px;
+                margin: 0 auto;
+                margin-top: 50px;
+                transition: 0.25s;
+                width: 153px;
+            }
+            
+            #submit-btn:hover {
+                box-shadow: 0px 1px 18px #c63724;
+            }
+            
+            .form {
+                align-items: left;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .form-border {
+                background: -webkit-linear-gradient(right, #f77b7b, #bd322d);
+                height: 1px;
+                width: 100%;
+            }
+            
+            .form-content {
+                background: #fbfbfb;
+                border: none;
+                outline: none;
+                padding-top: 14px;
+                width: 100%;
+            }
+            
+            .underline-title {
+                background: -webkit-linear-gradient(right, #f77b7b, #bd322d);
+                height: 2px;
+                margin: -1.1rem auto 0 auto;
+                width: 89px;
+            }
+            
+            a {
+                text-decoration: none;
+            }
+            
+            span {
+                font-size: 80%;
+            }
+            
+            .alertmessage {
+                color: red;
+                font-size: 170%;
+            }
+            
+            .register-reset-btn {
+                display: flex;
+                align-content: center;
+            }
+            
+            .tg {
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+            
+            .tg td {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+            }
+            
+            .tg th {
+                border-color: black;
+                border-style: solid;
+                border-width: 1px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                overflow: hidden;
+                padding: 10px 5px;
+                word-break: normal;
+                background-color: #f19d98;
+            }
+            
+            .tg .tg-0lax {
+                text-align: center;
+                vertical-align: middle;
+            }
+            
+            .cartBtn {
+                box-shadow: inset 0px 39px 0px -24px #e67a73;
+                background-color: #e4685d;
+                border-radius: 4px;
+                border: 1px solid #ffffff;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: Arial;
+                font-size: 15px;
+                padding: 6px 15px;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #b23e35;
+            }
+            
+            .cartBtn:hover {
+                background-color: #eb675e;
+            }
+            
+            .cartBtn:active {
+                position: relative;
+                top: 1px;
+            }
+            
+            .cart img {
+                height: 30%;
+                width: 30%;
+            }
+            
+            @media screen and (max-width: 767px) {
+                .tg {
+                    width: auto !important;
+                }
+                .tg col {
+                    width: auto !important;
+                }
+                .tg-wrap {
+                    overflow-x: auto;
+                    -webkit-overflow-scrolling: touch;
+                }
+            }
