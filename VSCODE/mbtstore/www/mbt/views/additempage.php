@@ -22,7 +22,7 @@
         </nav>
         <main>
             <section>
-            <div id="card">
+            <div>
                 <div id="card-content">
                     <? if(isset($_SESSION['message'])) {echo $_SESSION['message'];} ?>
                     <div id="card-title">

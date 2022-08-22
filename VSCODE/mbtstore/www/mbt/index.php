@@ -19,11 +19,25 @@ if ($action == NULL) {
 }
 
 switch ($action) {
+
+    case 'classification':
+        $classification = trim(filter_input(INPUT_GET, 'classificationName', FILTER_SANITIZE_SPECIAL_CHARS));
+        if($classification == 'Uniforms Management') {
+            header('Location: /mbt/uniforms/index.php?action=reportfilter');
+        }
+
+
+        exit;
+
+
     
     default:
         
         if(isset($_SESSION['loggedin'])) {
+            $clientLevel = $_SESSION['clientData']['clientLevel'];
+            if($clientLevel>1) {
             $navlist = navListCreator($classifications);
+            }
             $clientFirstName = $_SESSION['clientData']['clientFirstname'];
             $clientLastName = $_SESSION['clientData']['clientLastname'];
             $categories = getCategories();

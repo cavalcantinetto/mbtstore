@@ -22,6 +22,7 @@
         </nav>
         <main>
             <section><? if(isset($_SESSION['message'])) { echo $_SESSION['message'];}?></section>
+            <section><? if(isset($message)) { echo $message;}?></section>
                
             <section>
                 <? if(isset($uniformView)) { echo $uniformView;}?>

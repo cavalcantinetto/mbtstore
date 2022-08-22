@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<? if($_SESSION['clientData']['clientLevel']==1) {header('Location: /mbt/uniforms/index.php');}?><!DOCTYPE html>
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
@@ -22,21 +22,22 @@
         <main>
             <section>
                 <h1>Select the date to retrieve a report</h1>
-                <form action="/mbt/uniforms/index.php" method="POST">
+                
+                <form action="/mbt/uniforms/index.php" method="GET">
+                <div class='filterreport'>
                 <input type="date" id="timestart" name="timestart"
-                value="2022-07-01"
+                value="<? echo date('Y-m-d');  ?>"
                 min="2022-07-01" max="2023-12-31">
                 <br>
                 <input type="date" id="timeend" name="timeend"
-                value="2022-12-31"
+                value="<? echo date('Y-m-d');  ?>"
                 min="2022-07-01" max="2023-12-31">
                 <br>
-                <input type='hidden' name='action' value='controllerofitenssold'><br>
+                <input type='hidden' name='action' value='reportfilter'><br>
                 <input type='submit' class='submitBtn' name='submit' value='Filtrar'>
-                </form>
-
-
-
+                </div>    
+            </form>
+                
             </section>
                 
                 <? if(isset($htmlreport)){echo $htmlreport;}?>;

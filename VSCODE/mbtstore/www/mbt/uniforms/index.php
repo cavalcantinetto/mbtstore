@@ -28,10 +28,11 @@ switch ($action) {
         $categoryId = trim(filter_input(INPUT_GET, 'category', FILTER_SANITIZE_NUMBER_INT));
         $uniformItens = getUniformsByCategory($categoryId);
         $_SESSION['category'] = $categoryId;
+        
         if($clientLevel>1) {
             $uniformView = buildTableByCategory($uniformItens);
         } else {
-
+            $message = "<h1 class='alertmessage'> Choose size and click on it to move to cart.<h1>";
             $uniformView = buildTableByCategorylowprofile($uniformItens);
         }
         include '../views/uniformsview.php';
@@ -270,7 +271,7 @@ switch ($action) {
                             $dataToBeWritten .= logItemSold($result, $item['invQty'])."----------------------ATENTION AN ITEM BECAME NEGATIVE-------\r\n";
                         }
                     }}
-                $headerLog = logheaderItemSold($name, $email, $parentName, $kidsName);
+                $headerLog = logheaderItemSold($name, $email, $parentsname, $kidsName);
                 $textToBeWritten = $headerLog.$dataToBeWritten."\r\n -------------AMOUNT TO BE CHARGED - R$ ".$grandTotal."-------------\r\n"."\r\n -------------Slip is Ended-------------\r\n\r\n\r\n";
                 writeFile('uniformsold.txt', $textToBeWritten);
                 }
@@ -281,40 +282,60 @@ switch ($action) {
             //Transation is completed.
             $itensInCart = $_SESSION['cart'];
             $insertOrder = 0;
-            foreach ($itensInCart as $itens) {  
-                $item = returningItensToCart($itens['invIdUniform'], $itens['invQty']);
-                $insertOrder = insertOrderData($soldId, $item['itemDescription'],$item['invPrice'],$item ["sizes"], $item['qty'], $_SESSION['clientData']['clientId']);   
+            try {
+                foreach ($itensInCart as $itens) {  
+                    $item = returningItensToCart($itens['invIdUniform'], $itens['invQty']);
+                    $insertOrder = insertOrderData($soldId, $item['itemDescription'],$item['invPrice'],$item ["sizes"], $item['qty'], $_SESSION['clientData']['clientId']);   
+                }
+            } catch (Exception $e) {
+                    $_SESSION['message'] = "<p class='alertmessage'>Error accessing database. Try again latter</p>";
+                    header ('Location: /mbt/uniforms/');
+                    exit;
             }
-            if(!empty($insertOrder)) {
+
+            try {
                 $itensToBeWritten = [];
                 foreach ($itensInCart as $itens) {
                     $item = returningItensToCart($itens['invIdUniform'], $itens['invQty']);
                     array_push($itensToBeWritten, $item);
                     }
-                    $htmlslip = buildCartItensend($itensToBeWritten, $name, $email, $parentName, $kidsName, $room, $soldId);
-                    // unset($_SESSION['cart']);
+                    $htmlslip = buildCartItensend($itensToBeWritten, $name, $email, $parentsname, $kidsName, $soldId);
+                    unset($_SESSION['cart']);
                     $message = "<p class='alertmessage'>We are processing your order and the itens will be sent inside your kid's backpack.<br>You will be charged in your next available 'boleto'
                     <br>You don't need to print this page, but we do recomend you keep your Control Number just in case you need reviewing your order.</p>";
                     include "../views/finalslip.php";
                     exit;
-                } else {
+                } catch (Exception $e) {
                     $_SESSION['message'] = "<p class='alertmessage'>Error accessing database. Try again latter</p>";
                     header ('Location: /mbt/uniforms/');
                     exit;
             }
             exit;
                 
-    case 'controllerofitenssold':
-        $timestart = trim(filter_input(INPUT_POST, 'timestart', FILTER_SANITIZE_SPECIAL_CHARS));
-        $timeend = trim(filter_input(INPUT_POST, 'timeend', FILTER_SANITIZE_SPECIAL_CHARS));
-        $itenssolded = getItensSold($timestart, $timeend);
+    case 'reportfilter':
+        $timestart = trim(filter_input(INPUT_GET, 'timestart'));
+        $timestartstr = strval($timestart);
+        $timeend = trim(filter_input(INPUT_GET, 'timeend'));
+        $timeendstr = strval($timeend);
+        $timeend = strtotime($timeend);
+        $timeend = $timeend + 24*60*60;
+        $timestart = strtotime($timestart);
+        $itenssolded = getItensSold(date('Y-m-d', $timestart), date('Y-m-d', $timeend));
         $htmlreport = buildsoldreport($itenssolded);
-
-        var_dump($timestart);
-        var_dump($timeend);
-        
+        $_SESSION['timestart'] = $timestartstr;
+        $_SESSION['timeend'] = $timeendstr;
 
         include '../views/report.php';
+        exit;
+
+    case 'changestatus':
+        $orderId = trim(filter_input(INPUT_GET, 'item', FILTER_SANITIZE_SPECIAL_CHARS));
+        $field = trim(filter_input(INPUT_GET, 'field', FILTER_SANITIZE_SPECIAL_CHARS));
+        $value = trim(filter_input(INPUT_GET, 'value', FILTER_SANITIZE_NUMBER_INT));
+        $changestatus = changeOrderStatus($orderId, $field, $value);
+        $timestart = $_SESSION['timestart'];
+        $timeend = $_SESSION['timeend'];
+        header ("Location: /mbt/uniforms/index.php?timestart=$timestart&timeend=$timeend&action=reportfilter");
         exit;
 
     default:

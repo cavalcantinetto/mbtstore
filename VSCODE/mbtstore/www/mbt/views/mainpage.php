@@ -22,7 +22,7 @@
         </nav>
         <main>
             <section>
-                <? if(isset($clientFirstName)) {echo "<h1>Hey, $clientFirstName $clientLastName, choose an option below to manage inventory.</h1><br>";}?>
+                <? if(isset($clientFirstName)) {echo "<h1>Hello, $clientFirstName $clientLastName, Choose segment to buy uniforms (Childhood or Middle Years).</h1><br>";}?>
             </section>
                     <? echo $categorieshtml; ?>
             <section>

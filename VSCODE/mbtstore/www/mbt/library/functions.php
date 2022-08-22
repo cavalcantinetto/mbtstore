@@ -165,7 +165,6 @@ function buildTableByinvItemAdd($uniformItens) {
     $table .= "<td class='tg-0lax'>$itemDesc</td>";
     $table .= '</tr>';
     $table .= '</body></table></div><br><br>';
-    $table .= "<div class='cardscontainer'>";
     $table .= "<div class='tg-wrap'><table class='tg'>";
     $table .='<thead>';
     $table .='<tr>';
@@ -311,6 +310,12 @@ function getUserName($data) {
     return $name;
 }
 
+function getUserNameByClientId($clientId) {
+    $name = getClientId($clientId);
+    $result = $name['clientFirstname']." ".$name['clientLastname'];
+    return $result;
+}
+
 function getUserEmail($data) {
     $email = $data['clientEmail'];
     return $email;
@@ -435,13 +440,13 @@ function buildCartItensfinal($itensInCart) {
     return $table;
 }
 
-function buildCartItensend($itensToBeWritten, $name, $email, $parentName, $kidsName, $room, $soldId) {
+function buildCartItensend($itensToBeWritten, $name, $email, $parentName, $kidsName, $soldId) {
         //built a table that have image, description, qty, unit price and total.
         $table = "<div class='cardscontainer'>";
         $table .= "<div class='tg-wrap'><table class='tg'>";
         $table .="<tbody>";
         $table .= "Control Number: $soldId<br>";
-        $table .= "Name: $parentName<br>kid's name: $kidsName <br> Room: $room<br>";
+        $table .= "Name: $parentName<br>kid's name: $kidsName <br>";
         $table .= "email: $email";
         $table .= '</tbody></table>';
         $table .="<table class='tg'><thead>";
@@ -599,54 +604,69 @@ function resizeImage($old_image_path, $new_image_path, $max_width, $max_height) 
         $bigtable .= "<div class='tg-wrap'><table class='tg'>";
 
         foreach($itens as $i){
-            $bigtable .= '<tr>';
+            $bigtable .= "<div class='cardscontainer'><tr>";
             $table = "<div class='tg-wrap'><table class='tg'>";
-            $table .="<tbody>";
-            $table .= "Control Number: $i[soldId]<br>";
-            $table .= "Date: $i[date]<br>";
-            $table .= "Name: $i[buyer]<br>kid's name: $i[kidsName] <br> Room: $i[room]<br>";
-            $table .= "<strong>Total: $i[Total]</strong>";
-            $table .= '</tbody></table>';
             $table .="<table class='tg'><thead>";
+            $table .='<th class="tg-ul38">Date</th>';
+            $table .='<th class="tg-ul38">Control Number</th>';
+            $table .='<th class="tg-ul38">Name</th>';
+            $table .='<th class="tg-ul38">Kid\'s Name</th>';
             $table .='<th class="tg-ul38">Item</th>';
             $table .='<th class="tg-ul38">Description</th>';
             $table .='<th class="tg-ul38">Size</th>';
             $table .='<th class="tg-ul38">Quantity</th>';
             $table .='<th class="tg-ul38">Price</th>';
             $table .='<th class="tg-ul38">Total</th>';
+            $table .='<th class="tg-ul38">Sent to parent</th>';
+            $table .='<th class="tg-ul38">Charged</th>';
+            $table .='<th class="tg-ul38">Paid</th>';
             $table .='</thead>';
             $table .= '<tbody>';
             $grandTotal = 0;
             $cartIndex = 0;
-            $itensInCart = unserialize($i['cart']);
-            $itensToBeWritten = [];
-                foreach ($itensInCart as $itens) {
-                    $item = returningItensToCart($itens['invIdUniform'], $itens['invQty']);
-                    array_push($itensToBeWritten, $item);
-                }
+            $itensToBeWritten =  getorderData($i["soldId"]);
             foreach($itensToBeWritten as $u) {
                 $table .= '<tr>';
-                //$link = $cartIndex;
                 $cartIndexadjusted = $cartIndex + 1;
+                $table .= "<td class='tg-0lax'>$u[date]</td>";
+                $table .= "<td class='tg-0lax'>$u[soldId]</td>";
+                $parentName = getUserNameByClientId($u['clientId']);
+                $table .= "<td class='tg-0lax'>$parentName</td>";
+                $table .= "<td class='tg-0lax'>$u[kidsName]</td>";
                 $table .= "<td class='tg-0lax'>$cartIndexadjusted</td>";
-                $table .= "<td class='tg-0lax'>$u[itemDescription]</td>";
-                $table .= "<td class='tg-0lax'>$u[sizes]</td>";
+                $table .= "<td class='tg-0lax'>$u[description]</td>";
+                $table .= "<td class='tg-0lax'>$u[size]</td>";
                 $table .= "<td class='tg-0lax'>$u[qty]</td>";
-                $price = adjustCurrency($u['invPrice']);
+                $price = adjustCurrency($u['price']);
                 $table .= "<td class='tg-0lax'>$price</td>"; 
-                $total = intval($u['qty'])*floatval($u['invPrice']);
+                $total = intval($u['qty'])*floatval($u['price']);
                 $totalAdjusted = adjustCurrency($total);
                 $table .= "<td class='tg-0lax'>$totalAdjusted</td>";
-                $table .= '</tr>';
+                if ($u['delivered']) {
+                    $table .= "<td class='tg-0lax'><a href='/mbt/uniforms/index.php?action=changestatus&item=$u[orderId]&field=delivered&value=0'><button type='button' class='cartBtnG'>Done</button></a></td>";
+                } else {
+                    $table .= "<td class='tg-0lax'><a href='/mbt/uniforms/index.php?action=changestatus&item=$u[orderId]&field=delivered&value=1'><button type='button' class='cartBtn'>To Do</button></a></td>";
+                }
+                if ($u['charged']) {
+                    $table .= "<td class='tg-0lax'><a href='/mbt/uniforms/index.php?action=changestatus&item=$u[orderId]&field=charged&value=0'><button type='button' class='cartBtnG'>Done</button></a></td>";
+                } else {
+                    $table .= "<td class='tg-0lax'><a href='/mbt/uniforms/index.php?action=changestatus&item=$u[orderId]&field=charged&value=1'><button type='button' class='cartBtn'>To Do</button></a></td>";
+                }
+                if ($u['paid']) {
+                    $table .= "<td class='tg-0lax'><a href='/mbt/uniforms/index.php?action=changestatus&item=$u[orderId]&field=paid&value=0'><button type='button' class='cartBtnG'>Done</button></a></td>";
+                } else {
+                    $table .= "<td class='tg-0lax'><a href='/mbt/uniforms/index.php?action=changestatus&item=$u[orderId]&field=paid&value=1'><button type='button' class='cartBtn'>To Do</button></a></td>";
+                }
+                $table .= '</tr></div>';
                 $grandTotal = $grandTotal + $total;
                 $cartIndex =  $cartIndex + 1;
         
             }
                 $grandTotal = adjustCurrency($grandTotal);
-                $table .= "<tr><th></th><th></th><th></th><th></th><th class='tg-ul38'>Total Cart</th><th class='tg-ul38'>$grandTotal</th></tr>";
+                $table .= "<tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th class='tg-ul38'>Total Cart</th><th class='tg-ul38'>$grandTotal</th></tr>";
                 $table .= "</body></table><br></div>";
                 $bigtable .= $table;
-                $bigtable .= '</tr>';
+                $bigtable .= '<h></tr><hr>';
 
             }
             $bigtable .= '</table></div></div>';

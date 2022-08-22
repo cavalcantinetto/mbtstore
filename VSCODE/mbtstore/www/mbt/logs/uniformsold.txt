@@ -1179,3 +1179,281 @@ Left in inventory: 0units.
  -------------Slip is Ended-------------
 
 
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-19 15:44:01
+|Id Uniforme: 28 |Item: Bermuda Femina - Qty: 1units.
+|invIdUniform: 28 |invItem: Bermuda Femina  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: -10units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-19 15:44:01
+|Id Uniforme: 62 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 62 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: -10units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-19 15:44:01
+|Id Uniforme: 50 |Item: Camiseta Regata Feminina - Qty: 1units.
+|invIdUniform: 50 |invItem: Camiseta Regata Feminina  |Price: 50.60 |Total Price:R$ 50,60
+Obs: 
+Left in inventory: -10units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-19 15:44:01
+|Id Uniforme: 126 |Item: Bermuda Feminina - Qty: 1units.
+|invIdUniform: 126 |invItem: Bermuda Feminina  |Price: 70.40 |Total Price:R$ 70,40
+Obs: 
+Left in inventory: -1units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 289,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-19 15:44:14
+|Id Uniforme: 28 |Item: Bermuda Femina - Qty: 1units.
+|invIdUniform: 28 |invItem: Bermuda Femina  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: -11units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-19 15:44:14
+|Id Uniforme: 62 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 62 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: -11units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-19 15:44:14
+|Id Uniforme: 50 |Item: Camiseta Regata Feminina - Qty: 1units.
+|invIdUniform: 50 |invItem: Camiseta Regata Feminina  |Price: 50.60 |Total Price:R$ 50,60
+Obs: 
+Left in inventory: -11units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-19 15:44:14
+|Id Uniforme: 126 |Item: Bermuda Feminina - Qty: 1units.
+|invIdUniform: 126 |invItem: Bermuda Feminina  |Price: 70.40 |Total Price:R$ 70,40
+Obs: 
+Left in inventory: -2units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 289,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-21 12:35:50
+|Id Uniforme: 139 |Item: Bermuda Masculina - Qty: 1units.
+|invIdUniform: 139 |invItem: Bermuda Masculina  |Price: 74.80 |Total Price:R$ 74,80
+Obs: 
+Left in inventory: 1units.
+--------------------------------------------------------------------------------------------------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 74,80-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:25:49
+|Id Uniforme: 58 |Item: Bermuda microfibra(masc) - Qty: 1units.
+|invIdUniform: 58 |invItem: Bermuda microfibra(masc)  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: 2units.
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+2022-08-22 00:25:49
+|Id Uniforme: 64 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 64 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: 0units.
+--------------------------------------------------------------------------------------------------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 168,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:26:55
+|Id Uniforme: 58 |Item: Bermuda microfibra(masc) - Qty: 1units.
+|invIdUniform: 58 |invItem: Bermuda microfibra(masc)  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: 1units.
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+2022-08-22 00:26:55
+|Id Uniforme: 64 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 64 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: -1units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 168,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:27:47
+|Id Uniforme: 58 |Item: Bermuda microfibra(masc) - Qty: 1units.
+|invIdUniform: 58 |invItem: Bermuda microfibra(masc)  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: 0units.
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+2022-08-22 00:27:47
+|Id Uniforme: 64 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 64 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: -2units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 168,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:28:15
+|Id Uniforme: 58 |Item: Bermuda microfibra(masc) - Qty: 1units.
+|invIdUniform: 58 |invItem: Bermuda microfibra(masc)  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: -1units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-22 00:28:15
+|Id Uniforme: 64 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 64 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: -3units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 168,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:28:50
+|Id Uniforme: 58 |Item: Bermuda microfibra(masc) - Qty: 1units.
+|invIdUniform: 58 |invItem: Bermuda microfibra(masc)  |Price: 77.00 |Total Price:R$ 77,00
+Obs: 
+Left in inventory: -2units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+--------------------------------------------------------------------------------------------------
+2022-08-22 00:28:50
+|Id Uniforme: 64 |Item: Calça Helanca - Qty: 1units.
+|invIdUniform: 64 |invItem: Calça Helanca  |Price: 91.30 |Total Price:R$ 91,30
+Obs: 
+Left in inventory: -4units.
+--------------------------------------------------------------------------------------------------
+----------------------ATENTION AN ITEM BECAME NEGATIVE-------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 168,30-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: 
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:40:46
+|Id Uniforme: 40 |Item: Calça Legging - Qty: 1units.
+|invIdUniform: 40 |invItem: Calça Legging  |Price: 86.10 |Total Price:R$ 86,10
+Obs: 
+Left in inventory: 2units.
+--------------------------------------------------------------------------------------------------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 86,10-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: Pedro Paulo
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:45:12
+|Id Uniforme: 125 |Item: Bermuda Feminina - Qty: 1units.
+|invIdUniform: 125 |invItem: Bermuda Feminina  |Price: 70.40 |Total Price:R$ 70,40
+Obs: 
+Left in inventory: 3units.
+--------------------------------------------------------------------------------------------------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 70,40-------------
+
+ -------------Slip is Ended-------------
+
+
+______________SLIP START____________________
+|Sold By:  |Email: pedro@paulo.com
+Parent's Name: Pedro Paulo
+Kid's Name: Pedrinho Paulinho
+ --------------------------------------------------------------------------------------------------
+2022-08-22 00:45:36
+|Id Uniforme: 125 |Item: Bermuda Feminina - Qty: 1units.
+|invIdUniform: 125 |invItem: Bermuda Feminina  |Price: 70.40 |Total Price:R$ 70,40
+Obs: 
+Left in inventory: 2units.
+--------------------------------------------------------------------------------------------------
+
+ -------------AMOUNT TO BE CHARGED - R$ R$ 70,40-------------
+
+ -------------Slip is Ended-------------
+
+

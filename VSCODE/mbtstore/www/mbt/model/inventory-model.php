@@ -202,14 +202,14 @@ function insertSellingData($buyer, $kidsname, $total, $serialcart) {
 function insertOrderData($soldId, $description, $price, $size, $qty, $clientId) {
     $db = mbtConnect();
     $sql = "INSERT INTO `orders`(`soldId`, `description`, `price`, `size`, `qty`, `clientId`) 
-    VALUES (:soldId, :descricao, :price, :size, :qty, :clientId)";
+    VALUES (:soldId, :descriptio, :price, :size, :qty, :clientId)";
     $stmt = $db->prepare($sql);
     $stmt->bindValue(':soldId', $soldId, PDO::PARAM_INT);
-    $stmt->bindValue(':descricao', $description, PDO::PARAM_INT);
+    $stmt->bindValue(':descriptio', $description, PDO::PARAM_STR);
     $stmt->bindValue(':price', $price, PDO::PARAM_STR);
-    $stmt->bindValue(':size', $size, PDO::PARAM_STR);
-    $stmt->bindValue(':qty', $qty, PDO::PARAM_STR);
-    $stmt->bindValue(':clientId', $clientId, PDO::PARAM_STR);
+    $stmt->bindValue(':size', $size, PDO::PARAM_INT);
+    $stmt->bindValue(':qty', $qty, PDO::PARAM_INT);
+    $stmt->bindValue(':clientId', $clientId, PDO::PARAM_INT);
     $stmt->execute();
     $result = $stmt->rowCount();
     if($result) {
@@ -226,10 +226,41 @@ function getItensSold($timestart, $timeend) {
     $db = mbtConnect();
     $sql = "SELECT * 
     FROM uniformsolded
-    WHERE date BETWEEN :timestart AND :timeend";
+    WHERE uniformsolded.date >=:timestart AND uniformsolded.date <=:timeend";
     $stmt = $db->prepare($sql);
+    $stmt->bindValue(':timestart', $timestart, PDO::PARAM_STR);
+    $stmt->bindValue(':timeend', $timeend, PDO::PARAM_STR);
     $stmt->execute();
     $result = $stmt->fetchAll();
+    $stmt->closeCursor();
+    return $result;
+}
+
+function getorderData($soldId) {
+    $db = mbtConnect();
+    $sql = "SELECT orders.date, orders.soldId, orderId, clients.clientId, kids.kidsName, orders.description,size, qty,  price, orders.delivered, orders.charged, orders.paid
+    FROM orders
+    LEFT JOIN uniformsolded ON uniformsolded.soldID = orders.soldId
+    LEFT JOIN clients ON clients.clientID = orders.clientId 
+    LEFT JOIN kids ON kids.clientID = orders.ClientId
+    WHERE orders.soldId = :soldId";
+    $stmt = $db->prepare($sql);
+    $stmt->bindValue(':soldId', $soldId, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetchAll();
+    $stmt->closeCursor();
+    return $result;
+}
+
+function changeOrderStatus($orderId, $field, $value) {
+    $db = mbtConnect();
+    $sql = "UPDATE orders SET $field = :valu WHERE orderId = :orderId";
+    $stmt = $db->prepare($sql);
+    //$stmt->bindValue(':field', $field, PDO::PARAM_STR);
+    $stmt->bindValue(':valu', $value, PDO::PARAM_INT);
+    $stmt->bindValue(':orderId', $orderId, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->rowCount();
     $stmt->closeCursor();
     return $result;
 }

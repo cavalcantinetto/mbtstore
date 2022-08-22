@@ -22,9 +22,11 @@
             
             .loggedinlink {
                 flex-grow: 1;
-                font-size: 100%;
+                font-size: 1.5rem;
                 width: fit-content;
                 height: fit-content;
+                margin: 10px;
+                align-self: center;
             }
             
             .myaccountlink {
@@ -97,6 +99,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                ;
             }
             
             a :clicked {
@@ -255,9 +258,44 @@
                 top: 1px;
             }
             
+            .cartBtnG {
+                box-shadow: inset 0px 39px 0px -24px #24cc43;
+                background-color: #26e66c;
+                border-radius: 4px;
+                border: 1px solid #ffffff;
+                display: inline-block;
+                cursor: pointer;
+                color: #ffffff;
+                font-family: Arial;
+                font-size: 15px;
+                padding: 6px 15px;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #b23e35;
+            }
+            
+            .cartBtnG:hover {
+                background-color: #26e66c;
+            }
+            
+            .cartBtnG:active {
+                position: relative;
+                top: 1px;
+            }
+            
             .cart img {
                 height: 30%;
                 width: 30%;
+            }
+            
+            .filterreport {
+                display: flex;
+                padding: 10px;
+                align-items: center;
+                justify-items: center;
+            }
+            
+            .filterreport input {
+                margin: 10px;
             }
             
             @media screen and (max-width: 767px) {
@@ -270,5 +308,8 @@
                 .tg-wrap {
                     overflow-x: auto;
                     -webkit-overflow-scrolling: touch;
+                }
+                .headerlogo {
+                    display: none;
                 }
             }

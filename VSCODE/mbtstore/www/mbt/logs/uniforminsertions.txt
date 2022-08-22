@@ -29,3 +29,4 @@
 2022-08-14 11:29:48 |invIdUniform: 16 |invItem: Bermuda Femina |Qtd: 60 |By: Jose Cavalcanti |Email: admin@cse340.net
 2022-08-14 18:47:10 |invIdUniform: 152 |invItem: Camisa Manga Curta |Qtd: 1 |By: Jose Cavalcanti |Email: admin@cse340.net
 2022-08-14 19:56:30 |invIdUniform: 124 |invItem: Bermuda Feminina |Qtd: 1 |By: Jose Cavalcanti |Email: admin@cse340.net
+2022-08-22 00:06:44 |invIdUniform: 123 |invItem: Bermuda Feminina |Qtd: 8 |By: Jose Cavalcanti |Email: admin@cse340.net

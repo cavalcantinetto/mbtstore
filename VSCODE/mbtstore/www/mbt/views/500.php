@@ -7,8 +7,8 @@
     <title>Maple Bear Taubaté - Management</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Share+Tech&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/mbt/css/styles.css">
-    <link rel="stylesheet" media="screen" href="/mbt/css/styles.css">
+    <link rel="stylesheet" href="/mbt/css/stylescard.css">
+    <link rel="stylesheet" media="screen" href="/mbt/css/stylescard.css">
 </head>
 
 <body>
